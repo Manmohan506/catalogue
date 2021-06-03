@@ -17,7 +17,7 @@ pipeline {
                 sh '''
                   zip -r catalogue.zip node_modules server.js
                 '''      
-            }   
+              
             }
 
         }
@@ -31,6 +31,8 @@ pipeline {
 }
 
     }
+}
+
 }
 
 
