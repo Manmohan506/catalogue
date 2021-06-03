@@ -15,12 +15,13 @@ pipeline {
         stage('Prepare Artifacts') {
             steps {
                 sh '''
-                
-                zip -r catalogue.zip node_modules server.js
-                '''         
+                  zip -r catalogue.zip node_modules server.js
+                '''      
+            }   
             }
 
         }
+
         stage('Upload Artifacts') {
           steps {
              sh '''
