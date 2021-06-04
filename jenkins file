@@ -2,7 +2,7 @@ pipeline {
     agent {
         label 'NODEJS'
     }
-}
+
 stages {
 
     stage('Download Dependencies') {
@@ -28,4 +28,5 @@ stage('Upload Artifacts') {
         curl -f -v -u admin:DevOps321 --upload-file catalogue.zip http://172.31.13.99:8081/repository/catalogue/catalogue.zip
       '''
     }
+}
 }
